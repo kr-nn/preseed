@@ -7,7 +7,7 @@ dd if="$orig_iso" bs=1 count=432 of="$mbr_template"
 
 # check and make sure the xorriso command hasn't changed between image versions
 xorriso -as mkisofs \
-   -r -V $debian_name \
+   -r -V "$debian_name" \
    -o "$new_iso" \
    -J -J -joliet-long -cache-inodes \
    -isohybrid-mbr "$mbr_template" \

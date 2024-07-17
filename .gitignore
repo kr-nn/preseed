@@ -1,1 +1,4 @@
 debian-installer.iso
+debian-installer-build/*
+debian-preseed.iso
+isohdpfx.bin
